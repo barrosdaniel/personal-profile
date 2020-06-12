@@ -1,0 +1,252 @@
+/* **************************************************
+VARIABLES 
+************************************************** */
+/* COLORS */
+:root {
+  --color-white: #f4f4f4;
+  --color-black: #090909;
+  --color-gray-dark: #555;
+  --color-gray: #888;
+  --color-gray-light: #bbb;
+  --color-gray-lighter: #e5e5e5;
+
+  --color-primary-light: #3f51b5;
+  --color-primary: #303f9f;
+  --color-primary-dark: #1a237e;
+
+  /* OTHER */
+  --box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* **************************************************
+RESETS 
+************************************************** */
+body {
+  background-color: var(--color-white);
+  color: var(--color-gray);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+i {
+  margin: 10px;
+}
+
+/* **************************************************
+LAYOUT
+************************************************** */
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* **************************************************
+HEADING 
+************************************************** */
+header {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary-light);
+  float: left;
+  margin: 0 0 30px;
+  padding: 5px 0 0;
+  width: 100%;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: var(--color-white);
+}
+
+h1 {
+  font-size: 2em;
+  /* 2* 16px = 32px */
+  font-weight: 300;
+  margin: 15px 0;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 1em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+h3 {
+  margin: 0 0 1rem 0;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: var(--color-primary-dark);
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 6px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav a.selected,
+nav a:hover,
+nav a:active {
+  border-bottom: 2px solid var(--color-white);
+}
+
+/* **************************************************
+GALLERY SECTION
+************************************************** */
+#gallery {
+  margin: 0;
+  padding: 0;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: var(--color-gray-lighter);
+}
+
+#gallery .card {
+  margin: 0;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}
+
+#gallery .card-body {
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+#gallery .card-body a:link,
+#gallery .card-body a:visited {
+  color: var(--color-gray);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#gallery .card-body a:hover,
+#gallery .card-body a:active {
+  color: var(--color-gray-dark);
+}
+
+#gallery .card-body i {
+  font-size: 3rem;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* **************************************************
+FOOTER
+************************************************** */
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 50px;
+  color: var(--color-gray-light);
+}
+
+/* **************************************************
+PAGE ABOUT
+************************************************** */
+.profile-photo-container {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+/* **************************************************
+PAGE CONTACT
+************************************************** */
+.contact-info {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.contact-info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-info li a {
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-info li i {
+  margin-left: 0;
+}

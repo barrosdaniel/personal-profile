@@ -1,0 +1,100 @@
+@media screen and (max-width: 400px) {
+  nav li {
+    display: block;
+    margin: .5rem 0;
+  }
+
+  nav li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  nav li a:link,
+  nav li a:visited {
+    border-left: 2px solid transparent;
+    display: inline-block;
+    width: 70%;
+  }
+
+  nav li a:hover,
+  nav li a:active {
+    border-left: 2px solid var(--color-white);
+    border-bottom: 2px solid transparent;
+  }
+
+  nav li a.selected {
+    border-left: 2px solid var(--color-white);
+    border-bottom: 2px solid transparent;
+  }
+
+  #gallery li {
+    width: 95%;
+  }
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+  /* **************************************************
+  TWO-COLUMN LAYOUT
+  ************************************************** */
+  #primary {
+    width: 50%;
+    float: left;
+  }
+
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+
+
+
+  /* **************************************************
+  PORTFOLIO PAGE
+  ************************************************** */
+  #gallery li {
+    width: 28.333333%;
+  }
+
+
+
+  /* **************************************************
+  PORTFOLIO PAGE
+  ************************************************** */
+  .profile-photo-container {
+    float: left;
+    margin: 0 5% 80px 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  /* **************************************************
+  HEADER
+  ************************************************** */
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125rem;
+    margin-right: 5%;
+    text-align: right;
+    width: 55%;
+  }
+
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 35%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 0.825rem;
+    margin-bottom: 20px;
+  }
+}
