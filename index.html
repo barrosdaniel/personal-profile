@@ -17,61 +17,89 @@
     href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
   <title>Daniel Barros | Personal Profile</title>
 </head>
 
 <body>
-  <!-- Container starts -->
-  <div>
-    <header>
-      <div class="container">
-        <a href="index.html" id="logo">
-          <h1>Daniel Barros</h1>
-          <h2>Front-end Web Developer</h2>
-        </a>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="selected">Personal</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <div id="wrapper">
-      <section>
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        <h1 class="header__title">Daniel Barros <span
+            class="header__rmitid">(s3858175)</span></h1>
+        <h2 class="header__subtitle">Front-end Web Developer</h2>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item"><a class="header__nav-link"
+              id="header__nav-link--selected" href="index.html">Personal</a>
+          </li>
+          <li class="header__nav-list-item"><a class="header__nav-link"
+              href="about.html">About</a></li>
+          <li class="header__nav-list-item"><a class="header__nav-link"
+              href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="wrapper">
+    <section class="profile">
+      <div class="profile__part1">
         <div class="profile-photo-container clearfix">
           <img src="img/Headshot.jpg" alt="Photograph of Daniel Barros"
             class="profile-photo">
         </div>
         <h3>Personal Information</h3>
         <p>Hi, I'm Daniel Barros. I’m a Front-end Web Developer based out of
-          Perth, Australia. I bring to life fun, innovative,
-          accessible, and fast websites. I try to leave every bit of code I
-          touch more readable, modular, performant, accessible and maintainable
-          than I found it.</p>
+          Perth, Australia. I bring to life fun, innovative, accessible, and
+          fast websites. I try to leave every bit of code I touch more
+          readable,
+          modular, performant, accessible and maintainable than I found it.
+        </p>
         <p>When I'm not bringing design ideas into life, I like to read about
-          technology or watch good science
-          documentaries or sports.</p>
-        <p>If you'd like to connect on LinkedIn, here's my <a
-            href="https://www.linkedin.com/in/barros-daniel/"
-            target="_blank">profile</a>.</p>
-      </section>
+          technology or watch science documentaries or sports.</p>
+        <p>After approximately 20 years working in Human Resources, I have
+          switched careers into IT working with Information Systems. I’m now
+          pursuing Bachelor Degree in Information Technology, attempting to
+          concentrate further on Computer Science subjects. My career goal is
+          to
+          move into a more technical role, initially as a Software Developer
+          and
+          then move onto corporate Software Architecture.</p>
+      </div>
+      <div class="futsal-photo-container clearfix">
+        <img src="img/futsal.jpg" alt="Photograph of Daniel Barros"
+          class="futsal-photo">
+      </div>
+      <p>I was born and grew up in tropical Brazil where I finished school, my
+        first Bachelor Degree in Business (Human Resources) and a Master
+        Degree in Marketing, before coming to Australia and doing a second
+        Master Degree in Human Resources. Apart from English, I also speak
+        Portuguese (native) and can speak some Spanish, which has many
+        similarities to Portuguese.</p>
+      <p>Outside of my career, when I was younger, I played Futsal (an indoor
+        variation of soccer) at a competitive level, having won the WA State
+        League 2 times and competing in a national league, both as a player
+        and coach.</p>
+      <p>If you'd like to connect on LinkedIn, here's my <a
+          href="https://www.linkedin.com/in/barros-daniel/"
+          target="_blank">profile</a>.</p>
+    </section>
 
 
-      <footer>
-        <a href="https://www.linkedin.com/in/barros-daniel/" target="_blank"><i
-            class="fab fa-linkedin fa-2x"></i></a>
-        <a href="https://github.com/barrosdaniel" target="_blank"><i
-            class="fab fa-github-square fa-2x"></i></a>
-        <p><small>&copy; <span id="year"></span> Daniel Barros.</small></p>
-      </footer>
-      <!-- End of section, footer container -->
-    </div>
-    <!-- End of whole site container -->
+    <footer>
+      <a href="https://www.linkedin.com/in/barros-daniel/" target="_blank"><i
+          class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://github.com/barrosdaniel" target="_blank"><i
+          class="fab fa-github-square fa-2x"></i></a>
+      <p><small>&copy; <span id="year"></span> Daniel Barros.</small></p>
+    </footer>
+    <!-- End of section, footer container -->
   </div>
+  <!-- End of whole site container -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>

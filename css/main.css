@@ -1,11 +1,11 @@
-/* **************************************************
-VARIABLES 
-************************************************** */
+/* ====================================================================== 
+VARIABLES
+====================================================================== */
 /* COLORS */
 :root {
   --color-white: #f4f4f4;
   --color-black: #090909;
-  --color-gray-dark: #555;
+  --color-gray-dark: #444;
   --color-gray: #888;
   --color-gray-light: #bbb;
   --color-gray-lighter: #e5e5e5;
@@ -18,23 +18,43 @@ VARIABLES
   --box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* **************************************************
-RESETS 
-************************************************** */
+
+
+/* ====================================================================== 
+RESETS
+====================================================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
+  box-sizing: border-box;
   background-color: var(--color-white);
-  color: var(--color-gray);
+  color: var(--color-gray-dark);
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  line-height: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
   color: var(--color-primary);
-}
-
-ul {
-  list-style: none;
 }
 
 img {
@@ -45,148 +65,99 @@ i {
   margin: 10px;
 }
 
-/* **************************************************
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ====================================================================== 
 LAYOUT
-************************************************** */
-#wrapper {
+====================================================================== */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-/* **************************************************
-HEADING 
-************************************************** */
-header {
+
+/* ====================================================================== 
+HEADER
+====================================================================== */
+.header {
   background-color: var(--color-primary);
-  border-color: var(--color-primary-light);
-  float: left;
-  margin: 0 0 30px;
-  padding: 5px 0 0;
+  color: var(--color-white);
+  padding: 0.5rem;
   width: 100%;
-  -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
   font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
-#logo {
-  text-align: center;
-  margin: 0;
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1,
-h2 {
+/* LOGO */
+.header__title,
+.header__subtitle {
   color: var(--color-white);
-}
-
-h1 {
-  font-size: 2em;
-  /* 2* 16px = 32px */
   font-weight: 300;
-  margin: 15px 0;
-  line-height: 0.8em;
 }
 
-h2 {
-  font-size: 1em;
-  margin: -5px 0 0;
-  font-weight: normal;
+.header__title {
+  font-size: 4rem;
 }
 
-h3 {
-  margin: 0 0 1rem 0;
+.header__subtitle {
+  margin-top: -1rem;
+  padding-bottom: 1rem;
+}
+
+.header__rmitid {
+  font-size: 1rem;
+}
+
+.header__subtitle {
+  font-size: 1.5rem;
 }
 
 /* NAVIGATION */
-nav {
-  background-color: var(--color-primary-dark);
-  text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
-}
-
-nav ul {
-  margin: 0 10px;
-  padding: 10px;
-}
-
-nav li {
+.header__nav-list-item {
   display: inline-block;
 }
 
-nav li:not(:last-child) {
+.header__nav-list-item:not(:last-child) {
   margin-right: 20px;
 }
 
-nav a:link,
-nav a:visited {
+.header__nav-link:link,
+.header__nav-link:visited {
   color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 6px;
   border-bottom: 2px solid transparent;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-nav a.selected,
-nav a:hover,
-nav a:active {
+.header__nav-link:hover,
+.header__nav-link:active {
   border-bottom: 2px solid var(--color-white);
 }
 
-/* **************************************************
-GALLERY SECTION
-************************************************** */
-#gallery {
-  margin: 0;
-  padding: 0;
-}
-
-#gallery li {
-  float: left;
-  width: 45%;
-  margin: 2.5%;
-  background-color: var(--color-gray-lighter);
-}
-
-#gallery .card {
-  margin: 0;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
-}
-
-#gallery .card-body {
-  text-align: center;
-  margin: 0;
-  font-size: 1.25rem;
-}
-
-#gallery .card-body a:link,
-#gallery .card-body a:visited {
-  color: var(--color-gray);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-#gallery .card-body a:hover,
-#gallery .card-body a:active {
-  color: var(--color-gray-dark);
-}
-
-#gallery .card-body i {
-  font-size: 3rem;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+#header__nav-link--selected {
+  border-bottom: 2px solid var(--color-white);
 }
 
 /* **************************************************
@@ -198,6 +169,14 @@ footer {
   padding-top: 50px;
   color: var(--color-gray-light);
 }
+
+
+
+/* **************************************************
+PERSONAL PAGE
+************************************************** */
+
+
 
 /* **************************************************
 PAGE ABOUT
@@ -212,11 +191,30 @@ PAGE ABOUT
   box-shadow: var(--box-shadow);
 }
 
+
 .profile-photo {
   display: block;
   width: 100%;
   -webkit-transform: scale(1.6);
   transform: scale(1.6);
+}
+
+.futsal-photo-container {
+  display: inline-block;
+  width: 200px;
+  /* height: 150px; */
+  /* margin: 30px auto 0; */
+  /* border-radius: 100%; */
+  overflow: hidden;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}
+
+.futsal-photo {
+  display: block;
+  width: 100%;
+  /* -webkit-transform: scale(1.75);
+  transform: scale(1.75); */
 }
 
 /* **************************************************
