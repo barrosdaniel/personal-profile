@@ -45,60 +45,79 @@
     </div>
   </header>
 
-  <div id="wrapper">
+  <main class="content container">
+    <!-- Start Profile Section -->
     <section class="profile">
       <div class="profile__part1">
-        <div class="profile-photo-container clearfix">
-          <img src="img/Headshot.jpg" alt="Photograph of Daniel Barros"
-            class="profile-photo">
+        <img src="img/profile.jpg" alt="Photograph of Daniel Barros"
+          class="profile__photo">
+
+        <div class="profile__part1-text-box">
+          <h3>Personal Information</h3>
+          <p>Hi, I'm Daniel Barros. I’m a Front-end Web
+            Developer based out of
+            Perth, Australia. I bring to life fun, innovative, accessible, and
+            fast websites. I try to leave every bit of code I touch more
+            readable,
+            modular, performant, accessible and maintainable than I found it.
+          </p>
+          <p>When I'm not bringing design ideas into life, I like to read about
+            technology or watch science documentaries or sports.</p>
         </div>
-        <h3>Personal Information</h3>
-        <p>Hi, I'm Daniel Barros. I’m a Front-end Web Developer based out of
-          Perth, Australia. I bring to life fun, innovative, accessible, and
-          fast websites. I try to leave every bit of code I touch more
-          readable,
-          modular, performant, accessible and maintainable than I found it.
-        </p>
-        <p>When I'm not bringing design ideas into life, I like to read about
-          technology or watch science documentaries or sports.</p>
-        <p>After approximately 20 years working in Human Resources, I have
-          switched careers into IT working with Information Systems. I’m now
-          pursuing Bachelor Degree in Information Technology, attempting to
-          concentrate further on Computer Science subjects. My career goal is
-          to
-          move into a more technical role, initially as a Software Developer
-          and
-          then move onto corporate Software Architecture.</p>
       </div>
-      <div class="futsal-photo-container clearfix">
+      <p>After approximately 20 years working in Human Resources, I have
+        switched careers into IT working with Information Systems. I’m now
+        pursuing Bachelor Degree in Information Technology, attempting to
+        concentrate further on Computer Science subjects. My career goal is
+        to
+        move into a more technical role, initially as a Software Developer
+        and
+        then move onto corporate Software Architecture.</p>
+      <div class="profile__part2">
+        <div class="profile__part2-text-box">
+          <p>I was born and grew up in tropical Brazil where I finished school,
+            my
+            first Bachelor Degree in Business (Human Resources) and a Master
+            Degree in Marketing, before coming to Australia and doing a second
+            Master Degree in Human Resources. Apart from English, I also speak
+            Portuguese (native) and can speak some Spanish, which has many
+            similarities to Portuguese.</p>
+          <p>Outside of my career, when I was younger, I played Futsal (an
+            indoor
+            variation of soccer) at a competitive level, having won the WA State
+            League 2 times and competing in a national league, both as a player
+            and coach.</p>
+        </div>
         <img src="img/futsal.jpg" alt="Photograph of Daniel Barros"
-          class="futsal-photo">
+          class="profile__futsal-photo">
       </div>
-      <p>I was born and grew up in tropical Brazil where I finished school, my
-        first Bachelor Degree in Business (Human Resources) and a Master
-        Degree in Marketing, before coming to Australia and doing a second
-        Master Degree in Human Resources. Apart from English, I also speak
-        Portuguese (native) and can speak some Spanish, which has many
-        similarities to Portuguese.</p>
-      <p>Outside of my career, when I was younger, I played Futsal (an indoor
-        variation of soccer) at a competitive level, having won the WA State
-        League 2 times and competing in a national league, both as a player
-        and coach.</p>
       <p>If you'd like to connect on LinkedIn, here's my <a
           href="https://www.linkedin.com/in/barros-daniel/"
           target="_blank">profile</a>.</p>
     </section>
+    <!-- End of Profile Section -->
+
+  </main>
 
 
-    <footer>
-      <a href="https://www.linkedin.com/in/barros-daniel/" target="_blank"><i
-          class="fab fa-linkedin fa-2x"></i></a>
-      <a href="https://github.com/barrosdaniel" target="_blank"><i
-          class="fab fa-github-square fa-2x"></i></a>
-      <p><small>&copy; <span id="year"></span> Daniel Barros.</small></p>
-    </footer>
-    <!-- End of section, footer container -->
-  </div>
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <a href="https://www.linkedin.com/in/barros-daniel/" target="_blank"><i
+        class="fab fa-linkedin fa-2x"></i></a>
+    <a href="https://github.com/barrosdaniel" target="_blank"><i
+        class="fab fa-github-square fa-2x"></i></a>
+    <p><small>&copy; <span id="year"></span> Daniel Barros.</small></p>
+  </footer>
+  <!-- End of section, footer container -->
   <!-- End of whole site container -->
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

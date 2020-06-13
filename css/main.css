@@ -72,20 +72,24 @@ h3 {
   padding: 0;
 }
 
+h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 
 
 /* ====================================================================== 
 LAYOUT
 ====================================================================== */
 .container {
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
-}
-
-.wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 
@@ -160,6 +164,48 @@ HEADER
   border-bottom: 2px solid var(--color-white);
 }
 
+/* ====================================================================== 
+CONTENT
+====================================================================== */
+.content {
+  padding: 4rem;
+}
+
+
+
+/* ====================================================================== 
+PROFILE
+====================================================================== */
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__part1 {
+  display: flex;
+}
+
+.profile__photo {
+  align-self: flex-start;
+  width: 15rem;
+  margin: 0 3rem 0 0;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}
+
+.profile__part2 {
+  display: flex;
+}
+
+.profile__futsal-photo {
+  align-self: flex-start;
+  width: 22rem;
+  margin: 0 0 0 3rem;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+}
+
+
 /* **************************************************
 FOOTER
 ************************************************** */
@@ -181,23 +227,6 @@ PERSONAL PAGE
 /* **************************************************
 PAGE ABOUT
 ************************************************** */
-.profile-photo-container {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 30px;
-  border-radius: 100%;
-  overflow: hidden;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
-}
-
-
-.profile-photo {
-  display: block;
-  width: 100%;
-  -webkit-transform: scale(1.6);
-  transform: scale(1.6);
-}
 
 .futsal-photo-container {
   display: inline-block;
