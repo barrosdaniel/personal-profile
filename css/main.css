@@ -224,74 +224,16 @@ INTEREST SECTION
   column-span: all;
 }
 
-/* **************************************************
+/* ===================================================================== 
 FOOTER
-************************************************** */
-footer {
-  font-size: 0.75em;
+====================================================================== */
+.footer {
+  font-size: 0.8rem;
   text-align: center;
-  padding-top: 50px;
+  margin-top: 2rem;
   color: var(--color-gray-light);
 }
 
-
-
-/* **************************************************
-PERSONAL PAGE
-************************************************** */
-
-
-
-/* **************************************************
-PAGE ABOUT
-************************************************** */
-
-.futsal-photo-container {
-  display: inline-block;
-  width: 200px;
-  /* height: 150px; */
-  /* margin: 30px auto 0; */
-  /* border-radius: 100%; */
-  overflow: hidden;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
-}
-
-.futsal-photo {
-  display: block;
-  width: 100%;
-  /* -webkit-transform: scale(1.75);
-  transform: scale(1.75); */
-}
-
-/* **************************************************
-PAGE CONTACT
-************************************************** */
-.contact-info {
-  padding: 0;
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-.contact-info li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.contact-info li a {
-  padding-right: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.contact-info li i {
-  margin-left: 0;
+.footer__icon {
+  font-size: 3rem;
 }
