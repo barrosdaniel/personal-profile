@@ -129,7 +129,7 @@ HEADER
 }
 
 .header__rmitid {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .header__subtitle {
@@ -147,6 +147,7 @@ HEADER
 
 .header__nav-link:link,
 .header__nav-link:visited {
+  font-size: 1.4rem;
   color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -174,7 +175,7 @@ CONTENT
 
 
 /* ====================================================================== 
-PROFILE
+PROFILE SECTION
 ====================================================================== */
 .profile {
   display: flex;
@@ -205,6 +206,23 @@ PROFILE
   box-shadow: var(--box-shadow);
 }
 
+
+
+/* ====================================================================== 
+INTEREST SECTION
+====================================================================== */
+.interest {
+  margin-top: 4rem;
+  column-count: 2;
+  column-gap: 4rem;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: var(--color-gray-light);
+}
+
+.interest__title {
+  column-span: all;
+}
 
 /* **************************************************
 FOOTER
