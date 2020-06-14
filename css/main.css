@@ -67,7 +67,8 @@ i {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -75,6 +76,11 @@ h3 {
 h3 {
   font-size: 3rem;
   margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 p {
@@ -223,6 +229,32 @@ INTEREST SECTION
 .interest__title {
   column-span: all;
 }
+
+
+
+/* ====================================================================== 
+JOB DESCRIPTION SECTION
+====================================================================== */
+.job-description {
+  margin-top: 3rem;
+}
+
+.job-description__box {
+  display: flex;
+}
+
+.job-description__img-link {
+  display: block;
+  flex-basis: 100%;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+.job-description__img {
+  width: 100%;
+}
+
+
 
 /* ===================================================================== 
 FOOTER

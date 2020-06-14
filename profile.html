@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+  <title>Daniel Barros | Profile</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        <h1 class="header__title">Daniel Barros <span
+            class="header__rmitid">(s3858175)</span></h1>
+        <h2 class="header__subtitle">RMIT - Introduction to IT / OUA SP2 2020
+        </h2>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item"><a class="header__nav-link"
+              href="index.html">Personal</a>
+          </li>
+          <li class="header__nav-list-item"><a class="header__nav-link"
+              href="job.html">Job Analysis</a>
+          </li>
+          <li class="header__nav-list-item"><a class="header__nav-link"
+              id="header__nav-link--selected" href="profile.html">Profile</a>
+          </li>
+          <li class="header__nav-list-item"><a class="header__nav-link"
+              href="project.html">Project</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content container">
+
+  </main>
+
+  <footer class="footer">
+    <a href="https://www.linkedin.com/in/barros-daniel/" target="_blank"><i
+        class="fab fa-linkedin fa-2x footer__icon"></i></a>
+    <a href="https://github.com/barrosdaniel" target="_blank"><i
+        class="fab fa-github-square fa-2x footer__icon"></i></a>
+    <p><small>&copy; <span id="year"></span> Daniel Barros.</small></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
