@@ -228,9 +228,9 @@ INTEREST SECTION
 FOOTER
 ====================================================================== */
 .footer {
+  padding-bottom: 2rem;
   font-size: 0.8rem;
   text-align: center;
-  margin-top: 2rem;
   color: var(--color-gray-light);
 }
 
