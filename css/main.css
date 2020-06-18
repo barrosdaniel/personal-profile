@@ -83,6 +83,19 @@ h4 {
   margin-bottom: 0.8rem;
 }
 
+h5 {
+  font-size: 1.8rem;
+  margin-bottom: 0.7rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+
+
+
 p {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -181,18 +194,18 @@ CONTENT
 
 
 /* ====================================================================== 
-PROFILE SECTION
+INFORMATION SECTION
 ====================================================================== */
-.profile {
+.information {
   display: flex;
   flex-direction: column;
 }
 
-.profile__part1 {
+.information__part1 {
   display: flex;
 }
 
-.profile__photo {
+.information__photo {
   align-self: flex-start;
   width: 15rem;
   margin: 0 3rem 0 0;
@@ -200,11 +213,11 @@ PROFILE SECTION
   box-shadow: var(--box-shadow);
 }
 
-.profile__part2 {
+.information__part2 {
   display: flex;
 }
 
-.profile__futsal-photo {
+.information__futsal-photo {
   align-self: flex-start;
   width: 22rem;
   margin: 0 0 0 3rem;
@@ -254,6 +267,46 @@ JOB DESCRIPTION SECTION
   width: 100%;
 }
 
+
+
+/* ===================================================================== 
+PROFILE
+====================================================================== */
+.profile__bold {
+  font-weight: 700;
+}
+
+.profile__underline {
+  text-decoration: underline;
+}
+
+.profile__big5-image {
+  max-width: 100%;
+}
+
+.profile__learning-highlight-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+
+.profile__learning-highlight {
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.profile__learning-tip-list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile__learning-tip {
+  font-size: 1.6rem;
+}
 
 
 /* ===================================================================== 
