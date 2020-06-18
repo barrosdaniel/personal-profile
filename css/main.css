@@ -101,6 +101,10 @@ p {
   margin-bottom: 1rem;
 }
 
+figure {
+  margin: 3rem 0;
+}
+
 
 
 /* ====================================================================== 
@@ -270,7 +274,7 @@ JOB DESCRIPTION SECTION
 
 
 /* ===================================================================== 
-PROFILE
+PROFILE PAGE
 ====================================================================== */
 .profile__bold {
   font-weight: 700;
@@ -307,6 +311,29 @@ PROFILE
 .profile__learning-tip {
   font-size: 1.6rem;
 }
+
+
+
+/* ===================================================================== 
+PROJECT PAGE
+====================================================================== */
+.project__image {
+  max-width: 100%;
+}
+
+.project__skills-list {
+  padding-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.project__skills-list-item {
+  font-size: 1.6rem;
+}
+
+.project__bold {
+  font-weight: 700;
+}
+
 
 
 /* ===================================================================== 
